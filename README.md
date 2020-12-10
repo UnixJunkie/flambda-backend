@@ -17,7 +17,7 @@ $ git clone https://github.com/ocaml-flambda/flambda-backend
 $ cd flambda-backend
 $ git checkout origin/4.11
 ```
-For the moment, if running on macOS, edit `Makefile.in` at this point to remove the `-L` from the `cp` commands (there is a comment).
+For the moment, if running on macOS, edit `Makefile.in` at this point to remove the `-L` from the `cp` commands (there is a comment).  Then on all platforms:
 ```
 $ autoconf
 $ ./configure --prefix=/path/to/install/dir --enable-middle-end=closure --with-dune=$(pwd)/../dune/dune.exe
