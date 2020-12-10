@@ -3,6 +3,8 @@ The Flambda backend project for OCaml
 
 ## Installation instructions
 
+For the moment, if running on macOS, edit `Makefile.in` to remove the `-L` from the `cp` commands (there is a comment).
+
 ```
 $ opam switch 4.11.1
 $ eval $(opam env)
@@ -12,7 +14,11 @@ $ git checkout origin/special_dune
 $ make release
 $ cd ..
 $ git clone https://github.com/ocaml-flambda/flambda-backend
+$ cd flambda-backend
 $ git checkout origin/4.11
+```
+For the moment, if running on macOS, edit `Makefile.in` at this point to remove the `-L` from the `cp` commands (there is a comment).
+```
 $ autoconf
 $ ./configure --prefix=/path/to/install/dir --enable-middle-end=closure --with-dune=$(pwd)/../dune/dune.exe
 $ make
