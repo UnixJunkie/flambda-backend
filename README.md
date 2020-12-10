@@ -1,10 +1,9 @@
 # flambda-backend
-The Flambda backend project for OCaml
+The Flambda backend project for OCaml.
 
 ## Installation instructions
 
-For the moment, if running on macOS, edit `Makefile.in` to remove the `-L` from the `cp` commands (there is a comment).
-
+Only currently tested on Linux/x86-64 and macOS/x86-64.
 ```
 $ opam switch 4.11.1
 $ eval $(opam env)
